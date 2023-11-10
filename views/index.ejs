@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
+    <link rel="icon" type="image/ico" href="/favicon.ico">
+    <script src="/js/wakeLock.js"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <title>Página Inicial</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="card">
+
+            <div class="item infos">
+                <div class="col">
+                    <div class="row invite-image"></div>
+                    <div class="row">
+                        <div class="label">Data</div>
+                        <div>10/11/2023</div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Hora</div>
+                        <div>20:00</div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="row">
+                        <div class="title-party">Juntos, por eles!</div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Nome</div>
+                        <div><%= descName %></div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Área</div>
+                        <div><%= descDepartment %></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="item line"></div>
+            <img class="item" src="<%= qrCodeUrl %>" alt="QR Code">
+            <div class="item cronometro">
+                <div id="contador">
+                    A Confra começa em <span id="dias">00</span>d <span id="horas">00</span>h <span id="minutos">00</span>m <span id="segundos">00</span>s
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
