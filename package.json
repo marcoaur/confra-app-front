@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "bs": "browser-sync start --config bs-config.js"
+    "bs": "browser-sync start --config bs-config.js",
+    "build": "shx rm -rf dist && shx mkdir dist && babel . --out-dir dist --ignore node_modules,dist --copy-files"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,11 @@
     "qrcode": "^1.5.3"
   },
   "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
     "browser-sync": "^2.29.3",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "shx": "^0.3.4"
   }
 }
